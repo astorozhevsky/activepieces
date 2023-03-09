@@ -44,7 +44,7 @@ export const askOpenAI = createAction({
     }
 
     const response = await openai.createChatCompletion({
-      model: 'gpt-3.5-turbo',
+      model: 'gpt-3.5-turbo-0301',
       messages: [{
         role: "user",
         content: propsValue['prompt']!
